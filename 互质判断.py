@@ -1,3 +1,5 @@
+# this is a test file.
+
 choose = 1
 def choose_not_re():
     global choose
