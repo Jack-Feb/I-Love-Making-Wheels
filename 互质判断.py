@@ -38,7 +38,8 @@ while choose == 1:
         print('p与q互质')
         choose_not_re()
 
-def cmos ():
+        
+def cmos ():        # 这个函数是原来的版本，变量不易阅读，留此存档
     print("现在请输入传感器输出照片长边的最大像素值")
     i=int(input())
     print("现在请输入传感器尺寸的分子（分数形式）")
@@ -60,6 +61,3 @@ def cmos ():
     print("传感器的实际面积为",f,"平方毫米")
     print("传感器的裁切系数为",g)
     print("传感器的单位像素尺寸（即单位像素的边长）为",h,"微米")
-while True:
-    cmos()
-
