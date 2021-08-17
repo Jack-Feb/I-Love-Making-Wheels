@@ -37,3 +37,29 @@ while choose == 1:
     else:
         print('p与q互质')
         choose_not_re()
+
+def cmos ():
+    print("现在请输入传感器输出照片长边的最大像素值")
+    i=int(input())
+    print("现在请输入传感器尺寸的分子（分数形式）")
+    z=float(input())
+    print("现在请输入传感器尺寸的分母（分数形式）")
+    y=float(input())
+    a=z/y
+    print("2")
+    b=float(input())
+    print("请输入传感器短边所占比例")
+    c=float(input())
+    d=b*(((a**2)/(b**2+c**2))**0.5)*16
+    e=c*(((a**2)/(b**2+c**2))**0.5)*16
+    f=d*e
+    g=(1872**0.5)/(16*a)
+    h=(d/i)*1000
+    print("传感器的实际长度为",d,"毫米")
+    print("传感器的实际宽度为",e,"毫米")
+    print("传感器的实际面积为",f,"平方毫米")
+    print("传感器的裁切系数为",g)
+    print("传感器的单位像素尺寸（即单位像素的边长）为",h,"微米")
+while True:
+    cmos()
+
