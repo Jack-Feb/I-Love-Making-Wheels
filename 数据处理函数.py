@@ -9,3 +9,5 @@ def convert_cat2num(df):
     df.replace(num_encode, inplace=True)
 
 def concat_col_str_condition(df):
+    mask = df['col_1'].str.endswith('pil', na=False)
+    col_new = df[mask]['col_1'] + df[mask]['col_2']
