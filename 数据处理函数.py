@@ -13,4 +13,6 @@ def concat_col_str_condition(df):
     mask = df['col_1'].str.endswith('aaa', na=False)
     col_new = df[mask]['col_1'] + df[mask]['col_2']
     col_new.replace('aaa', ' ', regex=True, inplace=True) 
-def drop_multiple_col(cl_names_list,
+    
+def drop_multiple_col(cl_names_list,df): 
+    
