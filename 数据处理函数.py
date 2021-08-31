@@ -13,7 +13,8 @@ def concat_col_str_condition(df):
     mask = df['col_1'].str.endswith('aaa', na=False)
     col_new = df[mask]['col_1'] + df[mask]['col_2']
     col_new.replace('aaa', ' ', regex=True, inplace=True) 
-    
+
+# 删除多列数据
 def drop_multiple_col(cl_names_list,df): 
     df.drop(col_names_list, axis=1, inplace=True)
     return df
