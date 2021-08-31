@@ -15,4 +15,4 @@ def concat_col_str_condition(df):
     col_new.replace('aaa', ' ', regex=True, inplace=True) 
     
 def drop_multiple_col(cl_names_list,df): 
-    
+    df.drop(col_names_list, axis=1, inplace=True)
