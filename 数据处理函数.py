@@ -19,5 +19,6 @@ def drop_multiple_col(cl_names_list,df):
     df.drop(col_names_list, axis=1, inplace=True)
     return df
 
+# 删除列中的空格
 def remove_col_white_space(df):
     df[col] = df[col].str.lstrip()
