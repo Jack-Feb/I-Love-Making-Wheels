@@ -20,3 +20,4 @@ def drop_multiple_col(cl_names_list,df):
     return df
 
 def remove_col_white_space(df):
+    df[col] = df[col].str.lstrip()
